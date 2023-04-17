@@ -38,10 +38,15 @@
 
 #### Antes de nada abrimos los archivos correspondientes con pyspark.
 
-```python 
+```python python
 spark = SparkSession.builder.appName("ProyectoNLPSpark").getOrCreate()
 data = spark.read.csv('../data/ruddit_comments_score.csv', header=True, inferSchema=True, sep = ",", multiLine=True)
 data = data.withColumnRenamed("comment_id", "ID").withColumnRenamed("body", "Comentario").withColumnRenamed("score", "Puntuacion")
 ```
 
-`code`
+```javascript I'm A tab
+console.log('Code Tab A');
+```
+```javascript I'm tab B
+console.log('Code Tab B');
+```
